@@ -30,15 +30,66 @@
                 </ul> 
             </nav>
             <div class="header-text">
-                <p>Computer Scientist</p>
+                <p>Computer Science Student</p>
                 <h1>Hi, I'm <span>Mardo</span><br>Nunes From Brazil</h1>
             </div>
         </div>
-    </div>    
+    </div><!-- fim do header -->    
 
+    <!--about-->
     <div id="about"><!-- a seção about é sobre mim -->
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me (1).jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta cupiditate voluptate veritatis, laudantium nihil facilis nisi ducimus amet? Perferendis maxime consequuntur quidem possimus autem deleniti, non doloribus vel suscipit? Dolor?
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C</span><br>Programming Language</li>
+                            <li><span>HTML/CSS</span><br>Web Developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>C - 2022/Current</span><br>Universidade Federal do Paraná</li>
+                            <li><span>Computer Science - 2021/Current</span><br>Universidade Federal do Paraná</li>
+                            <li><span>HTML/CSS - 2023/Current</span><br>Alone</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- fim da seção about -->
+
+
+
+
+
     
-    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabName){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }    
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");   
+        }
+           
+    
+    </script>
 
 </body>
 </html>

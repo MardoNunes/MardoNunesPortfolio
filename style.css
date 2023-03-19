@@ -18,9 +18,19 @@ body{
     background-position: center;
 }
 
+#header video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
 .container{
     padding: 10px 10%; /*padding define a distancia entre o conteudo do elemento e suas bordas*/
-
+    position: relative;
+    z-index: 1; /*isso fez com que todo o container ficasse sobrepondo o video*/
 }
 
 nav{
@@ -53,7 +63,7 @@ nav ul li a::after{
     content: ' ' ;
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #3cc597;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -75,5 +85,5 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: #ff004f;
+    color: #3cc597;
 }

@@ -255,6 +255,52 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 
+/*Contact*/
+.contact{
+    background-color: #141414;
+    padding: 25px 0;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+.row{
+    flex-basis: 35%;
+}
+
+.row p{
+    margin-top: 30px;
+}
+
+.row p i{
+    color: #3cc597;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #3cc597;
+    transform: translateY(-5px);
+} 
+
+
+
 
 
 

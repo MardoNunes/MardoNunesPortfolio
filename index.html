@@ -13,18 +13,18 @@
     <div id="header"><!-- o header será a primeira parte do site, minha apresentação-->
 
         <video autoplay muted loop>
-            <source src="images/Backgorund Video.mp4" type="video/mp4">
+            <source src="assets/Backgorund Video.mp4" type="video/mp4">
         </video>
 
         <div class="container">
             <nav><!-- nav é navegação. Uma seção que aponta para outra area do site -->
             
-                <img src="images/LogoMardo.png" class="logo">
+                <img src="assets/LogoMardo.png" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul> 
             </nav>
             <div class="header-text">
@@ -39,7 +39,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/me (1).jpg">
+                    <img src="assets/me (1).jpg">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -58,8 +58,8 @@
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>C - 2022/Current</span><br>Universidade Federal do Paraná</li>
-                            <li><span>Computer Science - 2021/Current</span><br>Universidade Federal do Paraná</li>
                             <li><span>HTML/CSS - 2023/Current</span><br>Alone</li>
+                            <li><span>Computer Science - 2021/Current</span><br>Universidade Federal do Paraná</li>
                         </ul>
                     </div>
                 </div>
@@ -73,49 +73,52 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/UnderCooked.png">
+                    <img src="assets/UnderCooked.png">
                     <div class="layer">
                         <h3>Undercooked</h3>
                         <p>Undercooked é um jogo no terminal baseado no game Overcooked.</p>
-                        <a href="https://github.com/MardoNunes/Undercooked-Game" target="_blank"><img src="images/Link.png"></a>
+                        <a href="https://github.com/MardoNunes/Undercooked-Game" target="_blank"><img src="assets/Link.png"></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/MicoSiteV2.png">
+                    <img src="assets/MicoSiteV2.png">
                     <div class="layer">
                         <h3>MICO X1</h3>
                         <p>MICO X1 é um processador simples baseado na arquitetura MIPS.</p>
-                        <a href="https://github.com/MardoNunes/MICO-X1" target="_blank"><img src="images/Link.png"></a>
+                        <a href="https://github.com/MardoNunes/MICO-X1" target="_blank"><img src="assets/Link.png"></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/Nlw.png">
+                    <img src="assets/Nlw.png">
                     <div class="layer">
                         <h3>Social Media</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="https://github.com/MardoNunes/NLW-Calendrio-da-Copa" target="_blank"><img src="images/Link.png"></a>
+                        <a href="https://github.com/MardoNunes/NLW-Calendrio-da-Copa" target="_blank"><img src="assets/Link.png"></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <a href="#portfolio" class="btn">See More</a>
         </div>
     </div><!-- fim da seção portfolio -->
 
     <!--contact-->
-    <div class="contact">
-        <div class="container">
-            <h1 class="sub-title">Contact Me</h1>
-            <div class="row">
-                <p class="email"><i class="fa-solid fa-paper-plane"></i>contact@exemple.com</p>
-                <p><i class="fa-solid fa-phone"></i>40028922</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/mardo_nunes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/mardo-nunes/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/MardoNunes" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <div id="contact">
+        <div class="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact Me</h1>
+                <div class="row">
+                    <p class="email"><i class="fa-solid fa-paper-plane"></i>mardoqueu@ufpr.br</p>
+                    <p><i class="fa-solid fa-phone"></i>40028922</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/mardo_nunes/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mardo-nunes/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/MardoNunes" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="assets/_Currículo Atual.pdf" download class="bnt"><p>Download CV</p></a>
                 </div>
             </div>
         </div>
-    </div>
+    </div><!-- fim da seção contact -->
     
 
 
@@ -138,7 +141,7 @@
             document.getElementById(tabName).classList.add("active-tab");   
         }
         
-        /*script para redirecionamento com um clique no portfolio*/
+        
         
     
     </script>

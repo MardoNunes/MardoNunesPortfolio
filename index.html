@@ -20,12 +20,14 @@
             <nav><!-- nav é navegação. Uma seção que aponta para outra area do site -->
             
                 <img src="assets/LogoMardo.png" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul> 
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> 
             </nav>
             <div class="header-text">
                 <p>Computer Science Student</p>
@@ -91,8 +93,8 @@
                 <div class="work">
                     <img src="assets/Nlw.png">
                     <div class="layer">
-                        <h3>Social Media</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>NLW Copa</h3>
+                        <p>NLW Copa foi Bootcamp da Rocketseat na qual criamos um calendário para os jogos do Brasil na copa.</p>
                         <a href="https://github.com/MardoNunes/NLW-Calendrio-da-Copa" target="_blank"><img src="assets/Link.png"></a>
                     </div>
                 </div>
@@ -141,10 +143,20 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-tab");   
         }
+    </script>
+
+    <script>
+        /*script para abrir e fechar menu na versão responsiva*/
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-100%";
+        }
         
-        
-        
-    
     </script>
 
 </body>

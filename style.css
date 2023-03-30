@@ -57,9 +57,9 @@ nav ul li{
 }
 
 nav ul li a{
-    text-decoration: none;
+    text-decoration: solid;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
 }
 
@@ -349,6 +349,10 @@ nav .fas{
     .header-text h1{
         font-size: 30px;
     }
+
+    .header-text p{
+        font-size: 18px;
+    }
     
     nav .fas{
         display: block;
@@ -401,6 +405,11 @@ nav .fas{
 
     .tab-links{
         font-size: 20px;
+    }
+
+    /*mexendo no download cv*/
+    .bnt{
+        margin-top: 18px;
     }
 }
 

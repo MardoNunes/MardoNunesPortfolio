@@ -18,7 +18,6 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    /*Colocar alguma imgagem dps no meu header*/
     background-size: cover;
     background-position: center;
 }
@@ -58,9 +57,9 @@ nav ul li{
 }
 
 nav ul li a{
-    text-decoration: none;
+    text-decoration: solid;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
 }
 
@@ -118,6 +117,11 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+
+/* .about-col-2 .me{;
+    font-size: 15px;
+    
+} */
 
 .sub-title{
     font-size: 60px;
@@ -334,8 +338,102 @@ nav ul li a:hover::after{
     color: #fff;
 }
 
+.row .top{
+    right: 50px;
+    bottom: 20px;
+    position: absolute;
+    font-size: 20px;
+    color: #ababab;
+    cursor: pointer;
+    padding: 8px 10px;
+    border-radius: 35%;
+    text-decoration: none;
+    transition: background 0.5s;
+}
 
+.row .top:hover{
+    background: #3cc597;
+    color: #fff;
+    transition: 0.5s;
+}
 
+/*---------------- CSS for mobile ----------------*/
+nav .fas{
+    display: none;
+}
 
+@media only screen and (max-width: 600px){
+
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    .header-text p{
+        font-size: 18px;
+    }
+    
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    /*aqui, crio a barrinha que abre e fecha na lateral*/
+    nav ul{
+        background: #3cc597;
+        position: fixed;
+        top: 0;
+        right: -200px; /*-200px esconde a barra de navegação*/
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    /*Melhoro a distancia esntre as opções*/
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    /*Jogo o X de fechar la pra cima*/
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    .sub-title{
+        font-size: 50px;
+    }
+
+    /*aqui deixei minha foto no about maior*/
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-2{
+        font-size: 15px;
+    }
+
+    .tab-links{
+        font-size: 20px;
+    }
+
+    /*mexendo no download cv*/
+    .bnt{
+        margin-top: 18px;
+    }
+}
 
 

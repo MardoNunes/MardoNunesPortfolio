@@ -20,12 +20,14 @@
             <nav><!-- nav é navegação. Uma seção que aponta para outra area do site -->
             
                 <img src="assets/LogoMardo.png" class="logo">
-                <ul>
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul> 
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a></li>
+                    <li><a href="#about" onclick="closemenu()">About</a></li>
+                    <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i> 
             </nav>
             <div class="header-text">
                 <p>Computer Science Student</p>
@@ -43,7 +45,11 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta cupiditate voluptate veritatis, laudantium nihil facilis nisi ducimus amet? Perferendis maxime consequuntur quidem possimus autem deleniti, non doloribus vel suscipit? Dolor?
+                    <p class="me">Hello, my name is Mardoqueu Freire Nunes. I am currently studying Computer Science at UFPR and have been doing so since 2021. My journey in the world of computing began in the same year that I entered university, and from then on, I discovered that this is my true passion and the path that I want to pursue going forward. <br>
+
+                        <br> Although I have not yet decided which area of computing to specialize in, I have various interests such as artificial intelligence, security, software development, and backend areas like database management. Today, I see myself as a highly motivated individual who is constantly developing my skills and seeking professional and academic growth. <br>
+                        
+                        <br> I hope that in the future, I can embark on a successful journey in the world of computing.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -91,8 +97,8 @@
                 <div class="work">
                     <img src="assets/Nlw.png">
                     <div class="layer">
-                        <h3>Social Media</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>NLW Copa</h3>
+                        <p>NLW Copa foi Bootcamp da Rocketseat na qual criamos um calendário para os jogos do Brasil na copa.</p>
                         <a href="https://github.com/MardoNunes/NLW-Calendrio-da-Copa" target="_blank"><img src="assets/Link.png"></a>
                     </div>
                 </div>
@@ -115,6 +121,7 @@
                         <a href="https://github.com/MardoNunes" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                     <a href="assets/_Currículo Atual.pdf" download class="bnt"><p>Download CV</p></a>
+                    <a href="#header" class="top" ><i class="fa-solid fa-arrow-up"></i></a>
                 </div>
             </div>
             <i class=""></i>
@@ -141,10 +148,20 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-tab");   
         }
+    </script>
+
+    <script>
+        /*script para abrir e fechar menu na versão responsiva*/
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-100%";
+        }
         
-        
-        
-    
     </script>
 
 </body>
